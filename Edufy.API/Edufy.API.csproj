@@ -3,10 +3,18 @@
   <ItemGroup>
     <ProjectReference Include="..\Edufy.Application\Edufy.Application.csproj" />
     <ProjectReference Include="..\Edufy.Infrastructure\Edufy.Infrastructure.csproj" />
+    <ProjectReference Include="..\Edufy.Shared\Edufy.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="10.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Endpoints\" />
   </ItemGroup>
 
   <PropertyGroup>
